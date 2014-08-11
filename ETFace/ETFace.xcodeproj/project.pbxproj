@@ -143,6 +143,7 @@
 		4345FE6D1988181F0025AF14 /* ui-arrow-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4345FDF21988181F0025AF14 /* ui-arrow-right@2x.png */; };
 		4345FE6E1988181F0025AF14 /* ui-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4345FDF31988181F0025AF14 /* ui-menu@2x.png */; };
 		4345FE7219882D9F0025AF14 /* ViewSubmit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4345FE7119882D9F0025AF14 /* ViewSubmit.m */; };
+		43E079A219993C1600CED4AB /* ViewFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E079A119993C1600CED4AB /* ViewFace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,6 +299,8 @@
 		4345FDF31988181F0025AF14 /* ui-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-menu@2x.png"; sourceTree = "<group>"; };
 		4345FE7019882D9F0025AF14 /* ViewSubmit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSubmit.h; sourceTree = "<group>"; };
 		4345FE7119882D9F0025AF14 /* ViewSubmit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSubmit.m; sourceTree = "<group>"; };
+		43E079A019993C1600CED4AB /* ViewFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFace.h; sourceTree = "<group>"; };
+		43E079A119993C1600CED4AB /* ViewFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFace.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +363,7 @@
 				4345FD501988172C0025AF14 /* Main_iPhone.storyboard */,
 				4345FD531988172C0025AF14 /* Main_iPad.storyboard */,
 				4345FD761988181F0025AF14 /* Images */,
+				43E0799F19993C0A00CED4AB /* ViewFace */,
 				4345FE6F19882D910025AF14 /* ViewSubmit */,
 				4345FD4D1988172B0025AF14 /* ETAppDelegate.h */,
 				4345FD4E1988172C0025AF14 /* ETAppDelegate.m */,
@@ -550,6 +554,15 @@
 				4345FE7119882D9F0025AF14 /* ViewSubmit.m */,
 			);
 			path = ViewSubmit;
+			sourceTree = "<group>";
+		};
+		43E0799F19993C0A00CED4AB /* ViewFace */ = {
+			isa = PBXGroup;
+			children = (
+				43E079A019993C1600CED4AB /* ViewFace.h */,
+				43E079A119993C1600CED4AB /* ViewFace.m */,
+			);
+			path = ViewFace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -773,6 +786,7 @@
 			files = (
 				4345FD581988172C0025AF14 /* ETViewController.m in Sources */,
 				4345FD4B1988172B0025AF14 /* main.m in Sources */,
+				43E079A219993C1600CED4AB /* ViewFace.m in Sources */,
 				4345FE7219882D9F0025AF14 /* ViewSubmit.m in Sources */,
 				4345FD4F1988172C0025AF14 /* ETAppDelegate.m in Sources */,
 			);
@@ -991,6 +1005,7 @@
 				4345FD721988172C0025AF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4345FD731988172C0025AF14 /* Build configuration list for PBXNativeTarget "ETFaceTests" */ = {
 			isa = XCConfigurationList;
@@ -999,6 +1014,7 @@
 				4345FD751988172C0025AF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
