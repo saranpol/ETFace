@@ -16,97 +16,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="hairback-08.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOJ-6U-k9f">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-uv-3ab">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="body-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBr-Ck-kjR">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="bow-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-Lc-EPZ">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="face-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="aIx-QX-KgY">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="hair-05.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lg1-Qd-H1V">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="hair-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-22-sKQ">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="mouth-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="UAu-9v-buk">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="eye-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJl-XF-VWu">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="brow-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="t6U-gU-lJj">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="ear-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="2eo-Fw-1hn">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="nose-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="xLV-no-r8f">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="cheek-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="MoJ-aT-EeQ">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-hair3-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOJ-6U-k9f">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-body-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBr-Ck-kjR">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-bow-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-Lc-EPZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-face-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="aIx-QX-KgY">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-hair2-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lg1-Qd-H1V">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-hair1-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y2t-22-sKQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-mouth-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="UAu-9v-buk">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-brow-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="t6U-gU-lJj">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-nose-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="2eo-Fw-1hn">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-ear-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="xLV-no-r8f">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-cheek-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="MoJ-aT-EeQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" image="woman-eye-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJl-XF-VWu">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djv-eK-5re">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="65"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBT-bF-og5">
-                                        <rect key="frame" x="206" y="0.0" width="80" height="65"/>
+                                        <rect key="frame" x="320" y="0.0" width="138" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="ui-menu.png">
+                                        <state key="normal" image="btnSelect.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="clickTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4L-GE-SDQ"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ui-arrow-left.png" translatesAutoresizingMaskIntoConstraints="NO" id="UJb-aM-yUs">
-                                        <rect key="frame" x="280" y="24" width="10" height="17"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ui-arrow-right.png" translatesAutoresizingMaskIntoConstraints="NO" id="FaM-zW-lH4">
-                                        <rect key="frame" x="479" y="24" width="10" height="17"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgP-KO-A5R">
-                                        <rect key="frame" x="646" y="0.0" width="107" height="65"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECT" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="IuD-xg-IUd">
+                                        <rect key="frame" x="349" y="0.0" width="126" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
-                                        <inset key="imageEdgeInsets" minX="94" minY="0.0" maxX="0.0" maxY="2"/>
-                                        <state key="normal" title="NEXT" image="ui-arrow-right.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="IsY-BF-TIh" kind="push" id="Sra-p3-ZUj"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HAIR 3" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="IuD-xg-IUd">
-                                        <rect key="frame" x="292" y="0.0" width="185" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.87058823529999996" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="26"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27h-45-efR">
@@ -114,7 +97,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                         <inset key="imageEdgeInsets" minX="-25" minY="0.0" maxX="0.0" maxY="2"/>
-                                        <state key="normal" title="BACK" image="ui-arrow-left.png">
+                                        <state key="normal" image="btnBack.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -126,8 +109,35 @@
                                             <action selector="clickBack:" destination="IsY-BF-TIh" eventType="touchUpInside" id="ZD9-u9-cWh"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRF-HQ-YpA">
+                                        <rect key="frame" x="655" y="0.0" width="113" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="btnNext.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="IsY-BF-TIh" kind="push" id="PyK-88-GNy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.87058823529411766" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4i0-wM-OC1">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htM-yb-qUW">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="tutorial.png">
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickCloseHowTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5m-js-Peg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZa-K6-z9y">
                                 <rect key="frame" x="0.0" y="65" width="768" height="959"/>
@@ -138,9 +148,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L0-cb-bGH">
-                                                <rect key="frame" x="26" y="20" width="135" height="156"/>
+                                                <rect key="frame" x="26" y="20" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-01.png">
+                                                <state key="normal" image="nav-w-1-cheek.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -148,9 +158,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-2v-hLH">
-                                                <rect key="frame" x="171" y="20" width="135" height="156"/>
+                                                <rect key="frame" x="171" y="20" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-02.png">
+                                                <state key="normal" image="nav-w-2-ear.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -158,9 +168,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gm-iw-SHr">
-                                                <rect key="frame" x="608" y="20" width="135" height="156"/>
+                                                <rect key="frame" x="608" y="20" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-05.png">
+                                                <state key="normal" image="nav-w-5-eye.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -168,9 +178,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0C-Gi-zeT">
-                                                <rect key="frame" x="26" y="192" width="135" height="156"/>
+                                                <rect key="frame" x="26" y="192" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-06.png">
+                                                <state key="normal" image="nav-w-6-mouth.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -178,9 +188,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cA8-49-KtS">
-                                                <rect key="frame" x="316" y="20" width="135" height="156"/>
+                                                <rect key="frame" x="316" y="20" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-03.png">
+                                                <state key="normal" image="nav-w-3-nose.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -188,9 +198,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq5-m0-pVn">
-                                                <rect key="frame" x="462" y="192" width="135" height="156"/>
+                                                <rect key="frame" x="462" y="192" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-09.png">
+                                                <state key="normal" image="nav-w-9-face.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -198,9 +208,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ0-7R-etZ">
-                                                <rect key="frame" x="462" y="20" width="135" height="156"/>
+                                                <rect key="frame" x="462" y="20" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-04.png">
+                                                <state key="normal" image="nav-w-4-brow.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -208,9 +218,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdD-3Y-shy">
-                                                <rect key="frame" x="315" y="192" width="135" height="156"/>
+                                                <rect key="frame" x="315" y="192" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-08.png">
+                                                <state key="normal" image="nav-w-8-hair2.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -218,9 +228,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh5-tj-1pD">
-                                                <rect key="frame" x="171" y="192" width="135" height="156"/>
+                                                <rect key="frame" x="171" y="192" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-07.png">
+                                                <state key="normal" image="nav-w-7-hair1.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -228,9 +238,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-Vw-zCh">
-                                                <rect key="frame" x="608" y="192" width="135" height="156"/>
+                                                <rect key="frame" x="608" y="192" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-10.png">
+                                                <state key="normal" image="nav-w-10-bow.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -238,13 +248,23 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yN1-3I-ccl">
-                                                <rect key="frame" x="26" y="363" width="135" height="156"/>
+                                                <rect key="frame" x="26" y="363" width="135" height="160"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="item-11.png">
+                                                <state key="normal" image="nav-w-11-hair3.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="clickSelectIndex:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqs-KL-qfX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLr-5U-w1y">
+                                                <rect key="frame" x="171" y="363" width="135" height="160"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="nav-w-12-hair3.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clickSelectIndex:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjD-mX-6r2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -252,37 +272,6 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.46000000000000002" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4i0-wM-OC1">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TAP TO START YOUR MODERN MUSE LOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-bp-5tA">
-                                        <rect key="frame" x="72" y="187" width="645" height="268"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SLIDE TO CHANGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fx-1F-NpR">
-                                        <rect key="frame" x="37" y="463" width="645" height="214"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htM-yb-qUW">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickCloseHowTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5m-js-Peg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -295,9 +284,22 @@
                     <navigationItem key="navigationItem" id="pdn-Qo-vCc"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="mButton1" destination="9L0-cb-bGH" id="2v2-B6-fqC"/>
+                        <outlet property="mButton10" destination="6dz-Vw-zCh" id="H6Z-VL-9NX"/>
+                        <outlet property="mButton11" destination="yN1-3I-ccl" id="36g-Gr-4yR"/>
+                        <outlet property="mButton12" destination="SLr-5U-w1y" id="gD1-L5-2gh"/>
+                        <outlet property="mButton2" destination="JdN-2v-hLH" id="glz-Il-kla"/>
+                        <outlet property="mButton3" destination="cA8-49-KtS" id="mJ8-Se-Ycz"/>
+                        <outlet property="mButton4" destination="yQ0-7R-etZ" id="6e5-33-9X9"/>
+                        <outlet property="mButton5" destination="2Gm-iw-SHr" id="ecg-wE-hQs"/>
+                        <outlet property="mButton6" destination="P0C-Gi-zeT" id="Jxq-D0-VS6"/>
+                        <outlet property="mButton7" destination="nh5-tj-1pD" id="T9p-Ed-7ES"/>
+                        <outlet property="mButton8" destination="VdD-3Y-shy" id="Kjs-C4-W6I"/>
+                        <outlet property="mButton9" destination="Vq5-m0-pVn" id="hVV-fd-khQ"/>
                         <outlet property="mImage1" destination="MoJ-aT-EeQ" id="R0h-BP-Wo8"/>
                         <outlet property="mImage10" destination="cbJ-Lc-EPZ" id="adi-md-mvS"/>
-                        <outlet property="mImage11" destination="pOJ-6U-k9f" id="5ht-ka-L6N"/>
+                        <outlet property="mImage11" destination="yBr-Ck-kjR" id="O2l-Bh-fk7"/>
+                        <outlet property="mImage12" destination="pOJ-6U-k9f" id="vSW-3k-yf9"/>
                         <outlet property="mImage2" destination="xLV-no-r8f" id="Mm3-Rl-jXG"/>
                         <outlet property="mImage3" destination="2eo-Fw-1hn" id="tVy-PM-QGS"/>
                         <outlet property="mImage4" destination="t6U-gU-lJj" id="cbt-iU-niq"/>
@@ -346,7 +348,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                         <inset key="imageEdgeInsets" minX="-25" minY="0.0" maxX="0.0" maxY="2"/>
-                                        <state key="normal" title="BACK" image="ui-arrow-left.png">
+                                        <state key="normal" image="btnBack.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -435,24 +437,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hia-Cy-i67">
-                                <rect key="frame" x="162" y="416" width="136" height="97"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="start-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sP-ky-oxh">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hia-Cy-i67">
+                                <rect key="frame" x="147" y="201" width="219" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MALE">
+                                <state key="normal" image="start-btn-m.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="Rjk-qz-CKi"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="Male" id="Rjk-qz-CKi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2U-K9-uvP">
-                                <rect key="frame" x="466" y="416" width="136" height="97"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2U-K9-uvP">
+                                <rect key="frame" x="402" y="201" width="219" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FEMALE">
+                                <state key="normal" image="start-btn-w.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="Xhh-Jq-FZs"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="Female" id="Xhh-Jq-FZs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -466,32 +472,37 @@
         </scene>
     </scenes>
     <resources>
-        <image name="body-01.png" width="768" height="1024"/>
-        <image name="bow-01.png" width="768" height="816"/>
-        <image name="brow-01.png" width="768" height="449"/>
-        <image name="cheek-01.png" width="768" height="563"/>
-        <image name="ear-01.png" width="768" height="531"/>
-        <image name="eye-01.png" width="768" height="476"/>
-        <image name="face-01.png" width="768" height="660"/>
-        <image name="hair-01.png" width="768" height="431"/>
-        <image name="hair-05.png" width="768" height="473"/>
-        <image name="hairback-08.png" width="768" height="614"/>
-        <image name="item-01.png" width="135" height="156"/>
-        <image name="item-02.png" width="135" height="156"/>
-        <image name="item-03.png" width="135" height="156"/>
-        <image name="item-04.png" width="135" height="156"/>
-        <image name="item-05.png" width="135" height="156"/>
-        <image name="item-06.png" width="135" height="156"/>
-        <image name="item-07.png" width="135" height="156"/>
-        <image name="item-08.png" width="135" height="156"/>
-        <image name="item-09.png" width="135" height="156"/>
-        <image name="item-10.png" width="135" height="156"/>
-        <image name="item-11.png" width="135" height="156"/>
-        <image name="mouth-01.png" width="768" height="595"/>
-        <image name="nose-01.png" width="768" height="526"/>
-        <image name="ui-arrow-left.png" width="10" height="17"/>
-        <image name="ui-arrow-right.png" width="10" height="17"/>
-        <image name="ui-menu.png" width="29" height="22"/>
+        <image name="btnBack.png" width="87" height="19"/>
+        <image name="btnNext.png" width="77" height="18"/>
+        <image name="btnSelect.png" width="138" height="22"/>
+        <image name="nav-w-1-cheek.png" width="135" height="160"/>
+        <image name="nav-w-10-bow.png" width="135" height="160"/>
+        <image name="nav-w-11-hair3.png" width="135" height="160"/>
+        <image name="nav-w-12-hair3.png" width="135" height="160"/>
+        <image name="nav-w-2-ear.png" width="135" height="160"/>
+        <image name="nav-w-3-nose.png" width="135" height="160"/>
+        <image name="nav-w-4-brow.png" width="135" height="160"/>
+        <image name="nav-w-5-eye.png" width="135" height="160"/>
+        <image name="nav-w-6-mouth.png" width="135" height="160"/>
+        <image name="nav-w-7-hair1.png" width="135" height="160"/>
+        <image name="nav-w-8-hair2.png" width="135" height="160"/>
+        <image name="nav-w-9-face.png" width="135" height="160"/>
+        <image name="start-background.png" width="768" height="1024"/>
+        <image name="start-btn-m.png" width="219" height="219"/>
+        <image name="start-btn-w.png" width="219" height="219"/>
+        <image name="tutorial.png" width="768" height="1024"/>
+        <image name="woman-body-01.png" width="768" height="949"/>
+        <image name="woman-bow-01.png" width="768" height="1024"/>
+        <image name="woman-brow-01.png" width="768" height="371"/>
+        <image name="woman-cheek-01.png" width="768" height="1024"/>
+        <image name="woman-ear-01.png" width="768" height="1024"/>
+        <image name="woman-eye-01.png" width="768" height="507"/>
+        <image name="woman-face-01.png" width="768" height="658"/>
+        <image name="woman-hair1-01.png" width="768" height="1024"/>
+        <image name="woman-hair2-01.png" width="768" height="407"/>
+        <image name="woman-hair3-01.png" width="768" height="1024"/>
+        <image name="woman-mouth-01.png" width="768" height="578"/>
+        <image name="woman-nose-01.png" width="768" height="1024"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

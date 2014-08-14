@@ -7,7 +7,7 @@
 //
 
 #import "ETViewController.h"
-
+#import "ViewFace.h"
 
 @implementation ETViewController
 
@@ -15,4 +15,15 @@
     return YES;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ViewFace *v = [segue destinationViewController];
+    
+    if ([[segue identifier] isEqualToString:@"Male"]) {
+        v.mIsMale = YES;
+    }
+    
+    if ([[segue identifier] isEqualToString:@"Female"]) {
+        v.mIsMale = NO;
+    }
+}
 @end

@@ -10,6 +10,7 @@
 
 @interface ViewFace : UIViewController
 
+@property (nonatomic, assign) BOOL mIsMale;
 @property (nonatomic, assign) NSInteger mSelectIndex;
 
 @property (nonatomic, assign) NSInteger mIndex1;
@@ -23,6 +24,7 @@
 @property (nonatomic, assign) NSInteger mIndex9;
 @property (nonatomic, assign) NSInteger mIndex10;
 @property (nonatomic, assign) NSInteger mIndex11;
+@property (nonatomic, assign) NSInteger mIndex12;
 
 
 @property (nonatomic, weak) IBOutlet UIView *mViewTool;
@@ -39,6 +41,21 @@
 @property (nonatomic, weak) IBOutlet UIImageView *mImage9;
 @property (nonatomic, weak) IBOutlet UIImageView *mImage10;
 @property (nonatomic, weak) IBOutlet UIImageView *mImage11;
+@property (nonatomic, weak) IBOutlet UIImageView *mImage12;
+
+
+@property (nonatomic, weak) IBOutlet UIButton *mButton1;
+@property (nonatomic, weak) IBOutlet UIButton *mButton2;
+@property (nonatomic, weak) IBOutlet UIButton *mButton3;
+@property (nonatomic, weak) IBOutlet UIButton *mButton4;
+@property (nonatomic, weak) IBOutlet UIButton *mButton5;
+@property (nonatomic, weak) IBOutlet UIButton *mButton6;
+@property (nonatomic, weak) IBOutlet UIButton *mButton7;
+@property (nonatomic, weak) IBOutlet UIButton *mButton8;
+@property (nonatomic, weak) IBOutlet UIButton *mButton9;
+@property (nonatomic, weak) IBOutlet UIButton *mButton10;
+@property (nonatomic, weak) IBOutlet UIButton *mButton11;
+@property (nonatomic, weak) IBOutlet UIButton *mButton12;
 
 @property (nonatomic, strong) NSArray *mArray1;
 @property (nonatomic, strong) NSArray *mArray2;
@@ -51,6 +68,7 @@
 @property (nonatomic, strong) NSArray *mArray9;
 @property (nonatomic, strong) NSArray *mArray10;
 @property (nonatomic, strong) NSArray *mArray11;
+@property (nonatomic, strong) NSArray *mArray12;
 
 
 - (IBAction)clickTool:(id)sender;

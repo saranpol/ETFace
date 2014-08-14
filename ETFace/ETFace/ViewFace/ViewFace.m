@@ -23,6 +23,7 @@
 @synthesize mIndex9;
 @synthesize mIndex10;
 @synthesize mIndex11;
+@synthesize mIndex12;
 
 
 @synthesize mViewTool;
@@ -40,6 +41,20 @@
 @synthesize mImage9;
 @synthesize mImage10;
 @synthesize mImage11;
+@synthesize mImage12;
+
+@synthesize mButton1;
+@synthesize mButton2;
+@synthesize mButton3;
+@synthesize mButton4;
+@synthesize mButton5;
+@synthesize mButton6;
+@synthesize mButton7;
+@synthesize mButton8;
+@synthesize mButton9;
+@synthesize mButton10;
+@synthesize mButton11;
+@synthesize mButton12;
 
 @synthesize mArray1;
 @synthesize mArray2;
@@ -52,27 +67,74 @@
 @synthesize mArray9;
 @synthesize mArray10;
 @synthesize mArray11;
+@synthesize mArray12;
+
+@synthesize mIsMale;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.mSelectIndex = 1;
+    self.mSelectIndex = 0;
     [self updateTitle];
     
-    self.mArray1 = @[@"", @"cheek-01.png"];
-    self.mArray2 = @[@"", @"nose-01.png"];
-    self.mArray3 = @[@"", @"ear-01.png"];
-    self.mArray4 = @[@"", @"brow-01.png", @"brow-02.png", @"brow-03.png", @"brow-04.png", @"brow-05.png", @"brow-06.png", @"brow-07.png"];
-    self.mArray5 = @[@"eye-05.png", @"eye-01.png", @"eye-02.png", @"eye-03.png", @"eye-04.png", @"eye-06.png", @"eye-07.png", @"eye-08.png"];
-    self.mArray6 = @[@"mouth-06.png", @"mouth-01.png", @"mouth-02.png", @"mouth-03.png", @"mouth-04.png", @"mouth-05.png", @"mouth-07.png", @"mouth-08.png", @"mouth-09.png"];
-    // Hair 1
-    self.mArray7 = @[@"", @"hair-01.png", @"hair-02.png", @"hair-03.png", @"hair-04.png"];
-    // Hair 2
-    self.mArray8 = @[@"hair-05.png", @"hair-06.png", @"hair-07.png", @""];
-    self.mArray9 = @[@"face-01.png", @"face-02.png", @"face-03.png", @"face-04.png", @"face-05.png"];
-    self.mArray10 = @[@"", @"bow-01.png"];
-    // Hair 3
-    self.mArray11 = @[@"", @"hairback-08.png", @"hairback-09.png", @"hairback-10.png", @"hairback-11.png", @"hairback-12.png"];
+    if(mIsMale){
+        [mButton1 setImage:[UIImage imageNamed:@"nav-m-1-eye.png"] forState:UIControlStateNormal];
+        [mButton2 setImage:[UIImage imageNamed:@"nav-m-2-mouth.png"] forState:UIControlStateNormal];
+        [mButton3 setImage:[UIImage imageNamed:@"nav-m-3-hair.png"] forState:UIControlStateNormal];
+        
+        [mButton4 setHidden:YES];
+        [mButton5 setHidden:YES];
+        [mButton6 setHidden:YES];
+        [mButton7 setHidden:YES];
+        [mButton8 setHidden:YES];
+        [mButton9 setHidden:YES];
+        [mButton10 setHidden:YES];
+        [mButton11 setHidden:YES];
+        [mButton12 setHidden:YES];
+        
+        // Eye
+        self.mArray1 = @[@"man-eye-01.png", @"man-eye-02.png", @"man-eye-03.png"];
+        // Mouth
+        self.mArray2 = @[@"man-mouth-01.png", @"man-mouth-02.png", @"man-mouth-03.png"];
+        // Hair
+        self.mArray3 = @[@"man-hair-01.png", @"man-hair-02.png", @"man-hair-03.png"];
+
+        self.mArray4 = @[@"man-brow-01.png"];
+        self.mArray5 = @[@""];
+        self.mArray6 = @[@"man-face-01.png"];
+        self.mArray7 = @[@"man-body-01.png"];
+        self.mArray8 = @[@""];
+        self.mArray9 = @[@""];
+        self.mArray10 = @[@""];
+        self.mArray11 = @[@""];
+        self.mArray12 = @[@""];
+    }else{
+        // Cheek
+        self.mArray1 = @[@"woman-cheek-02.png", @"woman-cheek-01.png"];
+        // Ear
+        self.mArray2 = @[@"woman-ear-02.png", @"woman-ear-01.png", @"woman-ear-03.png", @"woman-ear-04.png"];
+        // Nose
+        self.mArray3 = @[@"woman-nose-02.png", @"woman-nose-01.png"];
+        // Brow
+        self.mArray4 = @[@"woman-brow-02.png", @"woman-brow-01.png", @"woman-brow-03.png", @"woman-brow-04.png", @"woman-brow-05.png", @"woman-brow-06.png"];
+        // Eye
+        self.mArray5 = @[@"woman-eye-02.png", @"woman-eye-01.png", @"woman-eye-03.png", @"woman-eye-04.png", @"woman-eye-05.png", @"woman-eye-06.png", @"woman-eye-07.png", @"woman-eye-08.png", @"woman-eye-09.png", @"woman-eye-10.png"];
+        // mouth
+        self.mArray6 = @[@"woman-mouth-04.png", @"woman-mouth-02.png", @"woman-mouth-03.png", @"woman-mouth-01.png", @"woman-mouth-05.png", @"woman-mouth-06.png", @"woman-mouth-07.png", @"woman-mouth-08.png", @"woman-mouth-09.png", @"woman-mouth-10.png"];
+        // Hair 1
+        self.mArray7 = @[@"woman-hair1-01.png", @"woman-hair1-02.png", @"woman-hair1-03.png"];
+        // Hair 2
+        self.mArray8 = @[@"woman-hair2-02.png", @"woman-hair2-01.png", @"woman-hair2-03.png", @"woman-hair2-04.png"];
+        // Face
+        self.mArray9 = @[@"woman-face-05.png", @"woman-face-02.png", @"woman-face-03.png", @"woman-face-04.png", @"woman-face-01.png"];
+        // Bow
+        self.mArray10 = @[@"woman-bow-01.png", @"woman-bow-02.png"];
+        // Body
+        self.mArray11 = @[@"woman-body-02.png", @"woman-body-01.png", @"woman-body-03.png"];
+        // Hair 3
+        self.mArray12 = @[@"woman-hair3-05.png", @"woman-hair3-02.png", @"woman-hair3-03.png", @"woman-hair3-04.png", @"woman-hair3-01.png", @"woman-hair3-06.png"];
+    }
+
     
     [self updateDefaultImage];
 }
@@ -90,9 +152,13 @@
     [mImage9 setImage:[UIImage imageNamed:[mArray9 objectAtIndex:mIndex9]]];
     [mImage10 setImage:[UIImage imageNamed:[mArray10 objectAtIndex:mIndex10]]];
     [mImage11 setImage:[UIImage imageNamed:[mArray11 objectAtIndex:mIndex11]]];
+    [mImage12 setImage:[UIImage imageNamed:[mArray12 objectAtIndex:mIndex12]]];
 }
 
 - (void)updateCurrentIndex {
+    if(!mSelectIndex)
+        return;
+    
     switch (mSelectIndex) {
         case 1:
             [mImage1 setImage:[UIImage imageNamed:[mArray1 objectAtIndex:mIndex1]]];
@@ -127,6 +193,9 @@
         case 11:
             [mImage11 setImage:[UIImage imageNamed:[mArray11 objectAtIndex:mIndex11]]];
             break;
+        case 12:
+            [mImage12 setImage:[UIImage imageNamed:[mArray12 objectAtIndex:mIndex12]]];
+            break;
     }
     
 }
@@ -144,14 +213,17 @@
 
 - (void)updateTitle {
     switch (mSelectIndex) {
+        case 0:
+            [mLabelTitle setText:@"SELECT"];
+            break;
         case 1:
             [mLabelTitle setText:@"CHEEK"];
             break;
         case 2:
-            [mLabelTitle setText:@"NOSE"];
+            [mLabelTitle setText:@"EAR"];
             break;
         case 3:
-            [mLabelTitle setText:@"EAR"];
+            [mLabelTitle setText:@"NOSE"];
             break;
         case 4:
             [mLabelTitle setText:@"BROW"];
@@ -175,6 +247,9 @@
             [mLabelTitle setText:@"BOW"];
             break;
         case 11:
+            [mLabelTitle setText:@"BODY"];
+            break;
+        case 12:
             [mLabelTitle setText:@"HAIR 3"];
             break;
     }
@@ -187,7 +262,7 @@
     [UIView animateWithDuration:0.3 animations:^{
         [mViewTool setAlpha:1.0];
     }];
-    [mLabelTitle setText:@"SELECT"];
+    [self updateTitle];
 }
 
 - (void)hideTool {
@@ -196,6 +271,7 @@
     } completion:^(BOOL finished){
         [mViewTool setHidden:YES];
     }];
+    [self updateTitle];
 }
 
 - (IBAction)clickTool:(id)sender {
@@ -250,6 +326,9 @@
         case 11:
             mIndex11 = (mIndex11==0) ? [mArray11 count]-1 : mIndex11 - 1;
             break;
+        case 12:
+            mIndex12 = (mIndex12==0) ? [mArray12 count]-1 : mIndex12 - 1;
+            break;
     }
     
     [self updateCurrentIndex];
@@ -289,6 +368,9 @@
             break;
         case 11:
             mIndex11 = ((mIndex11 + 1) >= [mArray11 count]) ? 0 : mIndex11 + 1;
+            break;
+        case 12:
+            mIndex12 = ((mIndex12 + 1) >= [mArray12 count]) ? 0 : mIndex12 + 1;
             break;
     }
     [self updateCurrentIndex];
