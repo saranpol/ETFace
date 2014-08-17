@@ -7,12 +7,13 @@
 //
 
 #import "ViewSubmit.h"
-
+#import "API.h"
 
 @implementation ViewSubmit
 
 @synthesize mTextFieldName;
 @synthesize mTextFieldEmail;
+@synthesize mViewIndicator;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -63,5 +64,46 @@
 - (IBAction)clickBack:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void)showError {
+    UIAlertView *v = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please try again" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [v show];
+    [mViewIndicator setHidden:YES];
+}
+
+
+- (IBAction)clickSubmit:(id)sender {
+    if(![mViewIndicator isHidden])
+        return;
+    if(!mTextFieldEmail.text || ([mTextFieldEmail.text length] == 0))
+        return;
+    if(!mTextFieldName.text || ([mTextFieldName.text length] == 0))
+        return;
+
+    
+    [mViewIndicator setHidden:NO];
+    
+    API *a = [API getAPI];
+    [a api_upload:a.mImageCurrent
+            email:mTextFieldEmail.text
+             name:mTextFieldName.text
+          success:^(id JSON){
+              NSDictionary *json = (NSDictionary*)JSON;
+              NSLog(@"%@", json);
+              if(json){
+                  NSNumber *success = [json objectForKey:@"success"];
+                  if(success && [success integerValue] > 0){
+                      [mViewIndicator setHidden:YES];
+                      [self.navigationController popToRootViewControllerAnimated:YES];
+                      return;
+                  }
+              }
+              [self showError];
+          }failure:^(NSError *failure){
+              NSLog(@"errorxxx %@", failure);
+              [self showError];
+          }];
+}
+
 
 @end

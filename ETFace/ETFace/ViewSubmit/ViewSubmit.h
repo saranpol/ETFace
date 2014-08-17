@@ -12,7 +12,9 @@
 
 @property (nonatomic, weak) IBOutlet UITextField *mTextFieldName;
 @property (nonatomic, weak) IBOutlet UITextField *mTextFieldEmail;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *mViewIndicator;
 
 - (IBAction)clickBack:(id)sender;
+- (IBAction)clickSubmit:(id)sender;
 
 @end

@@ -27,6 +27,8 @@
 @property (nonatomic, assign) NSInteger mIndex12;
 
 
+@property (nonatomic, weak) IBOutlet UIView *mViewContent;
+
 @property (nonatomic, weak) IBOutlet UIView *mViewTool;
 @property (nonatomic, weak) IBOutlet UIView *mViewHowTo;
 @property (nonatomic, weak) IBOutlet UILabel *mLabelTitle;
@@ -77,5 +79,6 @@
 - (IBAction)swipeLeft:(id)sender;
 - (IBAction)clickBack:(id)sender;
 - (IBAction)clickCloseHowTo:(id)sender;
+- (IBAction)clickNext:(id)sender;
 
 @end

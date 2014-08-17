@@ -69,7 +69,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djv-eK-5re">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="65"/>
@@ -106,7 +106,6 @@
                                         </state>
                                         <connections>
                                             <action selector="clickBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fzg-Ag-fwG"/>
-                                            <action selector="clickBack:" destination="IsY-BF-TIh" eventType="touchUpInside" id="ZD9-u9-cWh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRF-HQ-YpA">
@@ -116,7 +115,17 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="IsY-BF-TIh" kind="push" id="PyK-88-GNy"/>
+                                            <action selector="clickNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X74-3E-C5Z"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35L-v9-b3h">
+                                        <rect key="frame" x="600" y="18" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="IsY-BF-TIh" kind="push" identifier="GoSubmit" id="Qw2-1N-RAi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -309,6 +318,7 @@
                         <outlet property="mImage8" destination="Lg1-Qd-H1V" id="ILu-oG-e7i"/>
                         <outlet property="mImage9" destination="aIx-QX-KgY" id="2cD-ka-nM7"/>
                         <outlet property="mLabelTitle" destination="IuD-xg-IUd" id="HVc-7l-1fU"/>
+                        <outlet property="mViewContent" destination="hkd-uv-3ab" id="Wpw-hy-x04"/>
                         <outlet property="mViewHowTo" destination="4i0-wM-OC1" id="VLn-q6-FWw"/>
                         <outlet property="mViewTool" destination="hZa-K6-z9y" id="c97-IF-hUj"/>
                     </connections>
@@ -356,7 +366,7 @@
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="clickBack:" destination="IsY-BF-TIh" eventType="touchUpInside" id="Ojp-Og-l0X"/>
+                                            <action selector="clickBack:" destination="IsY-BF-TIh" eventType="touchUpInside" id="fQf-OY-DfU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -391,7 +401,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickSubmit:" destination="IsY-BF-TIh" eventType="touchUpInside" id="c9R-Mv-d0b"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="P1G-Za-rbc">
+                                <rect key="frame" x="374" y="475" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -399,6 +416,7 @@
                     <connections>
                         <outlet property="mTextFieldEmail" destination="6zm-Xn-hnX" id="0hN-Sc-eif"/>
                         <outlet property="mTextFieldName" destination="1tX-b1-9iZ" id="fgj-ri-87E"/>
+                        <outlet property="mViewIndicator" destination="P1G-Za-rbc" id="nhH-hR-9Qn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a70-5v-Gcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -488,7 +506,7 @@
         <image name="nav-w-8-hair2.png" width="135" height="160"/>
         <image name="nav-w-9-face.png" width="135" height="160"/>
         <image name="start-background.png" width="768" height="1024"/>
-        <image name="start-btn-m.png" width="219" height="219"/>
+        <image name="start-btn-m.png" width="219" height="218"/>
         <image name="start-btn-w.png" width="219" height="219"/>
         <image name="tutorial.png" width="768" height="1024"/>
         <image name="woman-body-01.png" width="768" height="949"/>

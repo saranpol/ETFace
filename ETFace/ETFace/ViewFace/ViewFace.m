@@ -7,7 +7,7 @@
 //
 
 #import "ViewFace.h"
-
+#import "API.h"
 
 @implementation ViewFace
 
@@ -25,6 +25,7 @@
 @synthesize mIndex11;
 @synthesize mIndex12;
 
+@synthesize mViewContent;
 
 @synthesize mViewTool;
 @synthesize mViewHowTo;
@@ -71,6 +72,7 @@
 
 @synthesize mIsMale;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -93,14 +95,14 @@
         [mButton12 setHidden:YES];
         
         // Eye
-        self.mArray1 = @[@"man-eye-01.png", @"man-eye-02.png", @"man-eye-03.png"];
+        self.mArray1 = @[@"man-eye-02.png", @"man-eye-01.png", @"man-eye-03.png"];
         // Mouth
-        self.mArray2 = @[@"man-mouth-01.png", @"man-mouth-02.png", @"man-mouth-03.png"];
+        self.mArray2 = @[@"man-mouth-03.png", @"man-mouth-02.png", @"man-mouth-01.png"];
         // Hair
-        self.mArray3 = @[@"man-hair-01.png", @"man-hair-02.png", @"man-hair-03.png"];
+        self.mArray3 = @[@"man-hair-03.png", @"man-hair-02.png", @"man-hair-01.png"];
 
         self.mArray4 = @[@"man-brow-01.png"];
-        self.mArray5 = @[@""];
+        self.mArray5 = @[@"man-nose-01.png"];
         self.mArray6 = @[@"man-face-01.png"];
         self.mArray7 = @[@"man-body-01.png"];
         self.mArray8 = @[@""];
@@ -217,13 +219,22 @@
             [mLabelTitle setText:@"SELECT"];
             break;
         case 1:
-            [mLabelTitle setText:@"CHEEK"];
+            if(mIsMale)
+                [mLabelTitle setText:@"EYE"];
+            else
+                [mLabelTitle setText:@"CHEEK"];
             break;
         case 2:
-            [mLabelTitle setText:@"EAR"];
+            if(mIsMale)
+                [mLabelTitle setText:@"MOUTH"];
+            else
+                [mLabelTitle setText:@"EAR"];
             break;
         case 3:
-            [mLabelTitle setText:@"NOSE"];
+            if(mIsMale)
+                [mLabelTitle setText:@"HAIR"];
+            else
+                [mLabelTitle setText:@"NOSE"];
             break;
         case 4:
             [mLabelTitle setText:@"BROW"];
@@ -387,6 +398,44 @@
                      }completion:^(BOOL finished){
                          [mViewHowTo setHidden:YES];
                      }];
+}
+
+- (UIImage*)resize:(UIImage*)image {
+    //UIGraphicsBeginImageContext(newSize);
+    // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
+    // Pass 1.0 to force exact pixel size.
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(768, 1024), NO, 1.0);
+    [image drawInRect:CGRectMake(0, 0, 768, 1024)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
+- (UIImage*)saveImage {
+    UIImage* image;
+    //UIGraphicsBeginImageContext(mViewContent.frame.size);
+    //UIGraphicsBeginImageContextWithOptions(mViewContent.bounds.size, self.view.opaque, 0.0);
+    UIGraphicsBeginImageContextWithOptions(mViewContent.bounds.size, NO, 0.0);
+    [mViewContent.layer renderInContext:UIGraphicsGetCurrentContext()];
+    image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    image = [self resize:image];
+
+//    NSData* imageData =  UIImagePNGRepresentation(image);     // get png representation
+//    UIImage* pngImage = [UIImage imageWithData:imageData];    // rewrap
+//    UIImageWriteToSavedPhotosAlbum(pngImage, nil, nil, nil);
+//    //    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+
+    
+    return image;
+}
+
+
+- (IBAction)clickNext:(id)sender {
+    API *a = [API getAPI];
+    a.mImageCurrent = [self saveImage];
+    [self performSegueWithIdentifier:@"GoSubmit" sender:sender];
 }
 
 @end
